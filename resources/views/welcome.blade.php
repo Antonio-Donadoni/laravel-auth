@@ -10,6 +10,9 @@
         </a>
       @endforeach
     </ul>
-    <h3><a href="{{ route ('employee.create')}}">CREATE NEW EMPLOYEE</a></h3>
+    @auth
+      <h3><a class="btn btn-info" href="{{ route ('employee.create')}}">CREATE NEW EMPLOYEE</a></h3>
+    @endauth
+
 </div>
 @endsection

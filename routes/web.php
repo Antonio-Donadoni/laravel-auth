@@ -14,6 +14,3 @@ Route::post('/update/{id}', 'AuthController@update') -> name('employee.update');
 
 Route::get('/create', 'AuthController@create') -> name('employee.create');
 Route::post('/store', 'AuthController@store') -> name('employee.store');
-
-
-Route::get('/home', 'HomeController@index')->name('home');
